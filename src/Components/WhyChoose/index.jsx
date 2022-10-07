@@ -1,8 +1,9 @@
-import React from 'react'
+import CardWhyChoose from "./CardWhyChoose"
+
 
 export const WhyChoose = () => {
   return (
-    <div>WhyChoose</div>
+    <CardWhyChoose /> 
   )
 }
 
