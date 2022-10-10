@@ -8,7 +8,6 @@
     flex-direction: column;
     justify-content: center;
     padding: 2%;
-    /*padding-bottom: 15%; agregar solo para celular*/
     background-image: url("./images/fondo6.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -16,7 +15,6 @@
 
   .cards-whychoose-container{
     padding: 2% 0;
-    height: inherit;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     row-gap: 2%;
@@ -25,6 +23,7 @@
 
   .card-whychoose{
     background: rgba(255, 255, 255, 0.4);
+    -webkit-backdrop-filter: blur(2px);
     backdrop-filter: blur(2px);
     border-radius: 50%;
     height: 200px;
@@ -49,3 +48,17 @@
       height: 50%;
       width: 50%;
     }
+
+@media screen and (max-width: 520px) {
+  .cards-whychoose-container{
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  }
+  .card-whychoose{
+    height: 160px;
+    width: 160px;
+  }
+  h3{
+    font-size: 100%;
+    font-weight: 600;
+  }
+}
