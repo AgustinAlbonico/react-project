@@ -4,8 +4,8 @@ const CardWhyChoose = () => {
   return (
     <section className='whychoose-container'>
      <h2>¿Por qué elegirnos?</h2>
+
      <div className='cards-whychoose-container'>
-      
       <div className='card-whychoose'>
         <img src={require('./images/whychoose1.png')} alt="precios flexibles" />
         <h3>Precios Flexibles</h3>
