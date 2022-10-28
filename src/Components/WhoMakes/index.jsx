@@ -1,8 +1,5 @@
-import React from 'react'
+import React from "react";
 
 export const WhoMakes = () => {
-  return (
-    <div>WhoMakes</div>
-  )
-}
-
+	return <div>WhoMakes</div>;
+};
