@@ -10,7 +10,8 @@ import { Partner } from "./Components/Partner";
 import { Surprise } from "./Components/Surprise";
 import { Instagram } from "./Components/Instagram";
 import { TellaFriend } from "./Components/TellaFriend";
-import { Foot } from "./Components/Foot";
+import Foot from "./Components/Foot";
+
 
 function App() {
   return (
@@ -25,7 +26,7 @@ function App() {
       <Surprise />
       <Instagram />
       <TellaFriend />
-      <Foot />
+      <Foot /> 
     </>
   );
 }
