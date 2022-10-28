@@ -9,11 +9,11 @@ export const WhoMakes = () => {
 				className="flex-1 flex flex-col justify-center 2xl:gap-7 xl:gap-5 gap-4 md:pl-6 px-3"
 			>
 				<div className="flex flex-col 2xl:gap-5 gap-3">
-					<h2 className="2xl:text-5xl md:text-3xl text-2xl  font-semibold">
+					<h2 className="2xl:text-5xl text-4xl  font-semibold">
 						<span className="text-skyblue">Que componentes </span>
 						ofrecemos?
 					</h2>
-					<p className="2xl:text-xl md:text-base text-sm font-semibold xl:pr-16 pr-8">
+					<p className="xl:text-lg md:text-base text-sm font-semibold xl:pr-16 pr-8">
 						Nos encargamos de brindarle a nuestros clientes la mejor calidad del
 						mercado y sabemos que lo hacemos. ¿Por que?
 					</p>
@@ -21,34 +21,34 @@ export const WhoMakes = () => {
 				<ul className="flex flex-col justify-center 2xl:gap-5 gap-4 ">
 					<li className="flex flex-row items-center gap-3">
 						<BsCheckCircleFill color="#05dbf2" className="text-xl" />
-						<p className="2xl:text-lg text-sm">
+						<p className="xl:text-lg md:text-base font-semibold text-sm">
 							Porque hace 5 años trabajamos con las mejores marcas de todo el
 							mundo.
 						</p>
 					</li>
 					<li className="flex flex-row items-center gap-3">
 						<BsCheckCircleFill color="#05dbf2" className="text-xl" />
-						<p className="2xl:text-lg text-sm">
+						<p className="xl:text-lg md:text-base font-semibold text-sm">
 							Porque nos aseguramos de probar los componentes y entregar
 							productos 100% funcionales
 						</p>
 					</li>
 					<li className="flex flex-row items-center gap-3">
 						<BsCheckCircleFill color="#05dbf2" className="text-xl" />
-						<p className="2xl:text-lg text-sm">
+						<p className="xl:text-lg md:text-base font-semibold text-sm">
 							Porque sabemos lo esenciales que son nuestros productos para el
 							dia a dia.
 						</p>
 					</li>
 					<li className="flex flex-row items-center gap-3">
 						<BsCheckCircleFill color="#05dbf2" className="text-xl" />
-						<p className="2xl:text-lg text-sm">
+						<p className="xl:text-lg md:text-base font-semibold text-sm">
 							Porque creemos que la calidad debe estar por delante de todo.
 						</p>
 					</li>
 					<li className="flex flex-row items-center gap-3">
 						<BsCheckCircleFill color="#05dbf2" className="text-xl" />
-						<p className="2xl:text-lg text-sm">
+						<p className="xl:text-xl md:text-base font-semibold text-sm">
 							Y sobre todo, porque las personas nos siguen eligiendo.
 						</p>
 					</li>
