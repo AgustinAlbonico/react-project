@@ -2,11 +2,11 @@ import { TYPES } from "../actions/actions";
 
 export const shoppingInitialState = {
     products: [
-      {id: 1, name: "CPU", sale: 150.999, price: 156.999, img: require('../Components/Offers/images/cpu.png')},
-      {id: 2, name: "Mouse 2.4Ghz Inalámbrico", sale: 2500, price: 2.899, img: require('../Components/Offers/images/mouse.png')},
-      {id: 3, name: "Teclado bluetooth Logitech ", sale: 17.999, price: 20.999, img: require('../Components/Offers/images/teclado.png')},
-      {id: 4, name: "Disco Rigido HDD 1TB", sale: 9.899, price: 12.099, img: require('../Components/Offers/images/disco.png')},
-      {id: 5, name: "PC Gamer", sale: 150.999, price: 159.999, img: require('../Components/Offers/images/pc-gamer.png')},
+      {id: 1, name: "CPU", sale: 150.999, price: 156.999, img: require('../images/cpu.png'), description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in mi tellus. Vivamus vitae neque quam. Mauris a condimentum odio. Nullam a laoreet elit. Mauris justo nunc, porta nec viverra vitae, blandit eu ligula. Mauris at sem erat. Duis turpis nulla, porttitor in felis ac, euismod viverra dolor."},
+      {id: 2, name: "Mouse 2.4Ghz Inalámbrico", sale: 2500, price: 2.899, img: require('../images/mouse.png'), description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in mi tellus. Vivamus vitae neque quam. Mauris a condimentum odio. Nullam a laoreet elit. Mauris justo nunc, porta nec viverra vitae, blandit eu ligula. Mauris at sem erat. Duis turpis nulla, porttitor in felis ac."},
+      {id: 3, name: "Teclado bluetooth Logitech ", sale: 17.999, price: 20.999, img: require('../images/teclado.png'), description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in mi tellus. Vivamus vitae neque quam. Mauris a condimentum odio. Nullam a laoreet elit. Blandit eu ligula. Mauris at sem erat. Duis turpis nulla, porttitor in felis ac, euismod viverra dolor."},
+      {id: 4, name: "Disco Rigido HDD 1TB", sale: 9.899, price: 12.099, img: require('../images/disco.png'), description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in mi tellus. Vivamus vitae neque quam. Mauris a condimentum odio. Nullam a laoreet elit. Mauris justo nunc, porta nec viverra vitae, blandit eu ligula. Duis turpis nulla, porttitor in felis ac, euismod viverra dolor."},
+      {id: 5, name: "PC Gamer", sale: 150.999, price: 159.999, img: require('../images/pc-gamer.png'),description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in mi tellus. Vivamus vitae neque quam. Mauris a condimentum odio. Nullam a laoreet elit. Mauris justo nunc, porta nec viverra vitae, blandit eu ligula. Duis turpis nulla, porttitor in felis ac, euismod viverra dolor."},
       
     ],
     cart: []
