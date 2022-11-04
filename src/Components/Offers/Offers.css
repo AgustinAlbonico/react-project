@@ -1,0 +1,112 @@
+/******UTILITIES******/
+.btn{
+  background-color: rgb(23, 116, 187);
+  padding: 2% 10%;
+  border-radius: 5px;
+  color: #ffff;
+}
+
+.btn:hover{
+  border: solid 1.5px rgb(23, 116, 187);
+}
+
+h2{
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+h5, h6{
+  width: 50%;
+}
+
+h5{
+  color: #fa9358;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: right;
+  padding-right: 5px;
+}
+
+h6{
+  text-decoration:line-through;
+  font-weight: 500;
+  color: gray;
+  text-align: left;
+  padding-left: 5px;
+}
+
+/******OFFERS******/
+
+.offers-container{
+  height: max-content;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1%;
+}
+
+  .cards-container{
+    height: fit-content;
+    padding: 1%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(225px, 1fr));
+    row-gap: 0.5%;
+    justify-items: center;
+  }
+
+  .card{
+    height: 350px;
+    width: 225px;
+  }
+
+  .card:hover button{
+    visibility: visible;
+    translate: 0 -20px;
+    transition: all 0.2s linear;
+  }
+  
+  .card:hover .description-card{
+    box-shadow: none;
+    font-weight: 700;
+    border: solid 1px rgb(23, 116, 187);
+  }
+  
+    .description-card{
+      height: 325px;
+      background-color: rgb(255, 255, 255);
+      border-radius: 20px;
+      border: solid 0.05px rgb(164, 164, 164, 0.15);
+      box-shadow: 5px 6px 10px rgba(164, 164, 164, 0.4);
+    }
+
+      .description-card img{
+        filter: drop-shadow(5px 5px 3px rgba(164, 164, 164, 0.8));
+      }
+
+      .text-card{
+        translate: 0 -13px;
+      }
+
+    .stars{
+      color: rgb(227, 227, 2);
+      font-size: 20px;
+    }
+
+    .card button{
+      translate: 0 -5px;
+      visibility: hidden;
+    }
+
+    .card button:active{
+      box-shadow: 2px 2px 10px black;
+    }
+
+    .price-text{
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+    }
+    
