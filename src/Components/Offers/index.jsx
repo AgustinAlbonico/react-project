@@ -8,7 +8,10 @@ import { shoppingInitialState, shoppingReducer } from "../../reducers/reducer";
 export const Offers = () => {
 
   const[isOpen, setIsOpen] = useState(true);
-    const openModal = () => setIsOpen (true);
+    const openModal = (id) => {
+      if (setIsOpen (true))
+      return products.filter(item=>item.id === id);
+    }
     const cancelModal = () => setIsOpen(false);
 
   const [state, dispatch] = useReducer(shoppingReducer, shoppingInitialState);
@@ -42,8 +45,5 @@ export const Offers = () => {
         )
       }  
      </section>
-   
-
   </>
-  
 };

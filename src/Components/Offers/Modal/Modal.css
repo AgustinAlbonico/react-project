@@ -13,6 +13,7 @@
 
 .is-open{
   display: flex;
+  flex-direction: column;
 }
 
   .modal-container{

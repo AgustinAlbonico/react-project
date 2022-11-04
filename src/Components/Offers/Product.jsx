@@ -1,9 +1,10 @@
 import './Offers.css'
 
-const Product = ({data, addToCart}) => {
+
+const Product = ({data, openModal}) => {
 
   const {id, name, sale, price, img} = data;
-
+  
   return (
     <div className="card">
       <div className="description-card">
@@ -19,8 +20,8 @@ const Product = ({data, addToCart}) => {
         </div>
       </div>
           
-      <button className="btn" onClick={() => addToCart(id)}>
-        Agregar al carrito 
+      <button className="btn" onClick={() => openModal(id)}>
+        Ver detalles 
       </button>
   </div>
   )
