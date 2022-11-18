@@ -8,23 +8,25 @@ import Productos from "../../Pages/Productos";
 import Notebooks from "../../Pages/Notebooks";
 import Soporte from "../../Pages/Soporte";
 import Comunidad from "../../Pages/Comunidad";
+import Carrito from "../../Pages/Carrito";
 
 function Rutas() {
-  return (
-    <Router>
-      <Warning />
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<Landing />} />
-        <Route path="/Micros" element={<Micros />} />
-        <Route path="/Monitores" element={<Monitores />} />
-        <Route path="/Productos" element={<Productos />} />
-        <Route path="/Notebooks" element={<Notebooks />} />
-        <Route path="/Soporte" element={<Soporte />} />
-        <Route path="/Comunidad" element={<Comunidad />} />
-      </Routes>
-    </Router>
-  );
+	return (
+		<Router>
+			<Warning />
+			<Navbar />
+			<Routes>
+				<Route path="/" element={<Landing />} />
+				<Route path="/Micros" element={<Micros />} />
+				<Route path="/Monitores" element={<Monitores />} />
+				<Route path="/Productos" element={<Productos />} />
+				<Route path="/Notebooks" element={<Notebooks />} />
+				<Route path="/Soporte" element={<Soporte />} />
+				<Route path="/Comunidad" element={<Comunidad />} />
+				<Route path="/Carrito" element={<Carrito />} />
+			</Routes>
+		</Router>
+	);
 }
 
 export default Rutas;

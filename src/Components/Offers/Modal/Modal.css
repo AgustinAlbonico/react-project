@@ -23,7 +23,8 @@
     background-color: #fff;
     border-radius: 10px;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);    
+    grid-template-columns: repeat(2, 1fr);  
+    margin: 2rem 0;  
   }
 
     .description-modal{

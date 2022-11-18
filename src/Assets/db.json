@@ -1,0 +1,70 @@
+{
+	"products": [
+		{
+			"id": 1,
+			"name": "CPU",
+			"sale": 150.999,
+			"price": 156.999,
+			"img": "https://upload.wikimedia.org/wikipedia/commons/9/9a/AVADirect-Custom-X99-Intel-Core-i7-gaming-cpu.png",
+			"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in mi tellus. Vivamus vitae neque quam. Mauris a condimentum odio. Nullam a laoreet elit. Mauris justo nunc, porta nec viverra vitae, blandit eu ligula. Mauris at sem erat. Duis turpis nulla, porttitor in felis ac, euismod viverra dolor."
+		},
+		{
+			"id": 2,
+			"name": "Mouse 2.4Ghz Inalámbrico",
+			"sale": 2500,
+			"price": 2.899,
+			"img": "https://stylos.mx/wp-content/uploads/2021/04/lado.png",
+			"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in mi tellus. Vivamus vitae neque quam. Mauris a condimentum odio. Nullam a laoreet elit. Mauris justo nunc, porta nec viverra vitae, blandit eu ligula. Mauris at sem erat. Duis turpis nulla, porttitor in felis ac."
+		},
+		{
+			"id": 3,
+			"name": "Teclado bluetooth Logitech ",
+			"sale": 17.999,
+			"price": 20.999,
+			"img": "https://smarts.com.ar/media/catalog/product/cache/5b8653d9435ca7b8c035b3971b386dd0/1/3/13962_1.jpg",
+			"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in mi tellus. Vivamus vitae neque quam. Mauris a condimentum odio. Nullam a laoreet elit. Blandit eu ligula. Mauris at sem erat. Duis turpis nulla, porttitor in felis ac, euismod viverra dolor."
+		},
+		{
+			"id": 4,
+			"name": "Disco Rigido HDD 1TB",
+			"sale": 9.899,
+			"price": 12.099,
+			"img": "https://www.qloud.ar/SITES/IMG/gaming-point-06-2021/tumb_221_12-10-2022-05-10-44-image.png",
+			"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in mi tellus. Vivamus vitae neque quam. Mauris a condimentum odio. Nullam a laoreet elit. Mauris justo nunc, porta nec viverra vitae, blandit eu ligula. Duis turpis nulla, porttitor in felis ac, euismod viverra dolor."
+		},
+		{
+			"id": 5,
+			"name": "PC Gamer",
+			"sale": 150.999,
+			"price": 159.999,
+			"img": "https://boulanger.scene7.com/is/image/Boulanger/4260745513081_pdm_0?wid=500&hei=500",
+			"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in mi tellus. Vivamus vitae neque quam. Mauris a condimentum odio. Nullam a laoreet elit. Mauris justo nunc, porta nec viverra vitae, blandit eu ligula. Duis turpis nulla, porttitor in felis ac, euismod viverra dolor."
+		}
+	],
+	"cart": [
+		{
+			"id": 3,
+			"name": "Teclado bluetooth Logitech ",
+			"sale": 17.999,
+			"price": 20.999,
+			"img": "https://smarts.com.ar/media/catalog/product/cache/5b8653d9435ca7b8c035b3971b386dd0/1/3/13962_1.jpg",
+			"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in mi tellus. Vivamus vitae neque quam. Mauris a condimentum odio. Nullam a laoreet elit. Blandit eu ligula. Mauris at sem erat. Duis turpis nulla, porttitor in felis ac, euismod viverra dolor."
+		},
+		{
+			"id": 4,
+			"name": "Disco Rigido HDD 1TB",
+			"sale": 9.899,
+			"price": 12.099,
+			"img": "https://www.qloud.ar/SITES/IMG/gaming-point-06-2021/tumb_221_12-10-2022-05-10-44-image.png",
+			"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in mi tellus. Vivamus vitae neque quam. Mauris a condimentum odio. Nullam a laoreet elit. Mauris justo nunc, porta nec viverra vitae, blandit eu ligula. Duis turpis nulla, porttitor in felis ac, euismod viverra dolor."
+		},
+		{
+			"id": 5,
+			"name": "PC Gamer",
+			"sale": 150.999,
+			"price": 159.999,
+			"img": "https://boulanger.scene7.com/is/image/Boulanger/4260745513081_pdm_0?wid=500&hei=500",
+			"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in mi tellus. Vivamus vitae neque quam. Mauris a condimentum odio. Nullam a laoreet elit. Mauris justo nunc, porta nec viverra vitae, blandit eu ligula. Duis turpis nulla, porttitor in felis ac, euismod viverra dolor."
+		}
+	]
+}

@@ -83,7 +83,8 @@ h6{
     }
 
       .description-card img{
-        filter: drop-shadow(5px 5px 3px rgba(164, 164, 164, 0.8));
+        
+        margin-bottom: 1rem;
       }
 
       .text-card{
