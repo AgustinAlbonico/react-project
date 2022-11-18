@@ -9,7 +9,9 @@ import { TYPES } from "../../actions/actions";
 export const Offers = () => {
 	const [isOpen, setIsOpen] = useState(false);
 	const [added, setAdded] = useState(false);
+	const [products, setProducts] = useState([]);
 	const [modalProduct, setModalProduct] = useState({});
+	const [state, dispatch] = useReducer(shoppingReducer, shoppingInitialState);
 
 	const openModal = (id) => {
 		setIsOpen(true);
@@ -18,22 +20,16 @@ export const Offers = () => {
 	};
 	const cancelModal = () => setIsOpen(false);
 
-	const [state, dispatch] = useReducer(shoppingReducer, shoppingInitialState);
-
-	const { products } = state;
 	const updateState = async () => {
-		const PRODUCTS_URL = "http://localhost:5000/products",
-			CART_URL = " http://localhost:5000/cart";
+		const PRODUCTS_URL = "http://localhost:5000/products";
 
-		const resProducts = await axios.get(PRODUCTS_URL),
-			resCart = await axios.get(CART_URL);
+		const { data } = await axios.get(PRODUCTS_URL);
+		const { cartItems } = await axios.get("http://localhost:5000/cart");
 
-		const productsList = await resProducts.data,
-			cartItems = await resCart.data;
-
+		setProducts(data);
 		dispatch({
 			type: TYPES.READ_STATE,
-			payload: [productsList, cartItems],
+			payload: [data, cartItems],
 		});
 	};
 
@@ -49,28 +45,29 @@ export const Offers = () => {
 		}, 2000);
 	};
 
-	return (
-		<>
-			<div className="offers-container">
-				<h2>Últimas ofertas</h2>
-				<section className="cards-container">
-					{products.map((product) => (
-						<Product key={product.id} data={product} openModal={openModal} />
-					))}
-				</section>
-			</div>
+	if (products)
+		return (
+			<>
+				<div className="offers-container">
+					<h2>Últimas ofertas</h2>
+					<section className="cards-container">
+						{products.map((product) => (
+							<Product key={product.id} data={product} openModal={openModal} />
+						))}
+					</section>
+				</div>
 
-			{isOpen ? (
-				<section className={`modal ${isOpen && "is-open"}`}>
-					<Modal
-						dataModal={modalProduct}
-						addToCart={addToCart}
-						cancelModal={cancelModal}
-						isOpen={isOpen}
-						added={added}
-					/>
-				</section>
-			) : null}
-		</>
-	);
+				{isOpen ? (
+					<section className={`modal ${isOpen && "is-open"}`}>
+						<Modal
+							dataModal={modalProduct}
+							addToCart={addToCart}
+							cancelModal={cancelModal}
+							isOpen={isOpen}
+							added={added}
+						/>
+					</section>
+				) : null}
+			</>
+		);
 };

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import axios from "axios";
 import { TYPES } from "../actions/actions";
 import shoppingReducer, { shoppingInitialState } from "../reducers/reducer";
@@ -6,24 +6,21 @@ import { useReducer, useEffect } from "react";
 import CartItem from "../Components/cartItem/CartItem";
 
 export default function Carrito() {
+	const [cart, setCartList] = useState([]);
 	const [state, dispatch] = useReducer(shoppingReducer, shoppingInitialState);
 
-	const { cart } = state;
-
 	const updateState = async () => {
-		const PRODUCTS_URL = "http://localhost:5000/products",
-			CART_URL = " http://localhost:5000/cart";
+		const CART_URL = "http://localhost:5000/cart";
 
-		const resProducts = await axios.get(PRODUCTS_URL),
-			resCart = await axios.get(CART_URL);
-
-		const productsList = await resProducts.data,
-			cartItems = await resCart.data;
+		const { data } = await axios.get(CART_URL);
+		const { productItems } = await axios.get("http://localhost:5000/products");
+		console.log(data);
 
 		dispatch({
 			type: TYPES.READ_STATE,
-			payload: [productsList, cartItems],
+			payload: [productItems, data],
 		});
+		setCartList(data);
 	};
 
 	useEffect(() => {
@@ -32,6 +29,7 @@ export default function Carrito() {
 
 	const deleteFromCart = (id, all = false) => {
 		if (all) {
+			updateState();
 			dispatch({
 				type: TYPES.REMOVE_ALL_PRODUCTS,
 				payload: id,
@@ -45,6 +43,7 @@ export default function Carrito() {
 	};
 
 	const clearCart = () => {
+		updateState();
 		dispatch({ type: TYPES.CLEAR_CART });
 	};
 

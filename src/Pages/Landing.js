@@ -7,22 +7,22 @@ import { Partner } from "../Components/Partner";
 import { Surprise } from "../Components/Surprise";
 import { Instagram } from "../Components/Instagram";
 import { TellaFriend } from "../Components/TellaFriend";
-import {Foot} from "../Components/Foot";
+import { Foot } from "../Components/Foot";
 
 export const Landing = () => {
-  return (
-    <>
-      <Banner />
-      <Offers />
-      <WhyChoose />
-      <WhoMakes />
-      <Partner />
-      <Surprise />
-      <Instagram />
-      <TellaFriend />
-      <Foot />
-    </>
-  );
+	return (
+		<>
+			<Banner />
+			<Offers />
+			<WhyChoose />
+			<WhoMakes />
+			<Instagram />
+			{/* <Partner /> */}
+			<Surprise />
+			<TellaFriend />
+			<Foot />
+		</>
+	);
 };
 
 export default Landing;
