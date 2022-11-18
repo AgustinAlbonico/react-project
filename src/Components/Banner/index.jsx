@@ -46,7 +46,7 @@ export const Banner = () => {
   const startSlider = () => {
     slideInterval = setInterval(() => {
       handleOnNextClick();
-    }, 5000);
+    }, 3000);
   };
 
   const handleOnNextClick = () => {

@@ -15,6 +15,7 @@ module.exports = {
 			skyblue: "#05dbf2",
 			salmon: "#f2bea0",
 			white: "#ffffff",
+			black : "#000",
 		},
 	},
 	plugins: [require('tailwind-scrollbar-hide')],

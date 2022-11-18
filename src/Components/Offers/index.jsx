@@ -7,7 +7,7 @@ import { shoppingInitialState, shoppingReducer } from "../../reducers/reducer";
 
 export const Offers = () => {
 
-  const[isOpen, setIsOpen] = useState(true);
+  const[isOpen, setIsOpen] = useState(false);
     const openModal = (id) => {
       if (setIsOpen (true))
       return products.filter(item=>item.id === id);

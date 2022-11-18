@@ -1,20 +1,21 @@
-import React, { useState, useEffect } from "react";
-import { GrClose } from "react-icons/gr";
+import React, {useState} from 'react';
+
 
 export const Warning = () => {
-  const [warningIsActive, setWarningIsActive] = useState(true);
+    const [nav, setNav] = useState(false)
+    const handleNav = () => {
+        setNav(!nav)
+    }
 
   return (
-    <section
-      className={`${
-        warningIsActive ? "flex" : "hidden"
-      } justify-between items-center w-full text-black py-2 px-8 bg-blue-400 font-medium`}
-    >
-      <div></div>
-      <div>Lorem ipsum dolor sit amet consectetur.</div>
-      <div className="cursor-pointer" onClick={() => setWarningIsActive(false)}>
-        <GrClose size={20} />
+    <div className='w-full h-[80px] bg-darkblue'>
+      <div className='max-w-[1000px] mx-auto content-center items-center h-full flex justify-center'>
+        <div className=''>
+          <h1 className='text-[#e7c03e] text-center align-middle'>Bienvenidos a BytePro!!! Hasta 70% en CyberMonday!!!</h1>
+         </div>
       </div>
-    </section>
+    </div>
   );
 };
+
+export default Warning;
